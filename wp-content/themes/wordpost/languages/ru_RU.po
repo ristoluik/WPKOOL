@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wordpost v1.3\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2016-08-25 17:50+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <wp_theme@bestwebsoft.com>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:12 index.php:36 post_format-none.php:8 search.php:30
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: 404.php:13
+msgid "There is no such page on this address."
+msgstr "Страницы с таким адресом не существует."
+
+#: archive.php:24 index.php:23 search.php:25
+msgid "&laquo; Older posts"
+msgstr "&laquo; Ранние записи"
+
+#: archive.php:25 index.php:24 search.php:26
+msgid "Newer posts &raquo;"
+msgstr "Новые записи &raquo;"
+
+#: comments.php:13
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s комментарий к &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s комментария к &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s комментариев к &ldquo;%2$s&rdquo;"
+
+#: comments.php:18
+msgid "&larr; Older Comments"
+msgstr "&larr; Предыдущие комментарии"
+
+#: comments.php:19
+msgid "Newer Comments &rarr;"
+msgstr "Следующие комментарии &rarr;"
+
+#: comments.php:24
+msgid "Comments are closed."
+msgstr "Комментирование закрыто."
+
+#: footer.php:17
+msgid "Powered by "
+msgstr "Создано "
+
+#: functions.php:9
+msgid "Primary Menu"
+msgstr "Главное Меню"
+
+#: functions.php:98
+msgid "Sidebar"
+msgstr "Боковая панель"
+
+#: functions.php:100
+msgid "This sidebar is located to the left of content"
+msgstr "Эта боковая панель расположен слева от основного контента"
+
+#: functions.php:107 functions.php:133
+msgid "Home"
+msgstr "Главная"
+
+#: functions.php:121
+msgid "Search Results"
+msgstr "Результаты поиска"
+
+#: functions.php:123
+msgid "Page not found"
+msgstr "Страница не найдена"
+
+#: functions.php:126
+msgid "tag"
+msgstr "метка"
+
+#: functions.php:128 functions.php:130
+msgid "archive"
+msgstr "архив"
+
+#: functions.php:152
+msgid "Choose file..."
+msgstr "Выберите файл..."
+
+#: functions.php:153
+msgid "File is not selected."
+msgstr "Файл не выбран."
+
+#: functions.php:173
+msgid "Pingback:"
+msgstr "Уведомление:"
+
+#: functions.php:173
+msgid "(Edit)"
+msgstr "(Редактировать)"
+
+#: functions.php:185
+msgid "Post author"
+msgstr "Автор записи"
+
+#: functions.php:190
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: functions.php:194
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерацию."
+
+#: functions.php:198 image.php:22 post_format-aside.php:23
+#: post_format-image.php:21 post_format-link.php:15 post_format-page.php:24
+#: post_format-quote.php:15 post_format-status.php:27 post_format.php:33
+msgid "Edit"
+msgstr "Редактировать"
+
+#: functions.php:202
+msgid "Reply"
+msgstr "Ответить"
+
+#: functions.php:216 image.php:16
+msgid "Posted on"
+msgstr "Опубликовано"
+
+#: functions.php:219 image.php:18
+msgid "in"
+msgstr "в"
+
+#: functions.php:243
+msgid "Title of the slide"
+msgstr "Название слайда"
+
+#: functions.php:247
+msgid "URL-link for title"
+msgstr "URL-ссылка для названия"
+
+#: functions.php:251
+msgid "Description the slide"
+msgstr "Описание слайда"
+
+#: functions.php:262
+msgid "Display the current post in the slider"
+msgstr "Отобразить эту запись в слайдере"
+
+#: functions.php:273
+msgid ""
+"If the size of the picture in the slider you are not satisfied ,download the "
+"desired image and make it the featured image. The required size of the image "
+"- not less then 940px at 327px"
+msgstr ""
+"Если размер картинки в слайдере вас не устраивает, заново загрузите нужную "
+"картинку и сделайте ее миниатюрой записи. Требуемый размер картинки - не "
+"меньше 940пикс на 327пикс"
+
+#: functions.php:274
+msgid "Make the slide"
+msgstr "Сделать слайдом"
+
+#: header.php:49
+msgid "Welcome to our blog!"
+msgstr "Добро пожаловать!"
+
+#: image.php:19
+msgid "Size of image"
+msgstr "Размер изображения"
+
+#: image.php:24
+msgid "&larr; Previous image"
+msgstr "&larr; Предыдущее изображение"
+
+#: image.php:25
+msgid "Next image &rarr;"
+msgstr "Следующее изображение &rarr;"
+
+#: index.php:29
+msgid "No posts to display"
+msgstr "Нет записей для отображения"
+
+#: index.php:31
+msgid "Ready to publish your first post?"
+msgstr "Готовы опубликовать первую запись?"
+
+#: index.php:32
+msgid "Get started here"
+msgstr "Начните отсюда"
+
+#: index.php:38 post_format-none.php:10
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+"Извините, но по Вашему запросу нет результатов. Возможно, поиск поможет "
+"найти соответствующую запись."
+
+#: post_format-aside.php:27 post_format-image.php:25 post_format-link.php:19
+#: post_format-page.php:29 post_format-quote.php:19 post_format-status.php:31
+#: post_format.php:38
+msgid "Top"
+msgstr "Вверх"
+
+#: post_format-link.php:9
+msgid "Link"
+msgstr "Ссылка"
+
+#: post_format-status.php:17
+#, php-format
+msgid "Permalink to %s"
+msgstr "Ссылка на  %s"
+
+#: search.php:13
+msgid "You searched for"
+msgstr "Вы искали"
+
+#: search.php:15
+msgid "Here is the results:"
+msgstr "Вот результат поиска:"
+
+#: search.php:31
+msgid "Sorry, but nothing matched your search keywords."
+msgstr "Извините, но ничего не соответствуют вашим ключевым словам поиска."
+
+#: searchform.php:11
+msgid "Enter search keyword"
+msgstr "Введите ключевое слово"
+
+#: searchform.php:14
+msgid "Search"
+msgstr "Поиск"
+
+#~ msgid "&laquo; Older posts "
+#~ msgstr "&laquo; Ранние записи"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Архив за день: %s"
+
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Архив за месяц: %s"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Архив за год: %s"
+
+#~ msgid "Archive of the tags: %s"
+#~ msgstr "Архив меток: %s"
+
+#~ msgid "Archive of the categories: %s"
+#~ msgstr "Архив категорий: %s"
+
+#~ msgid "&nbsp;thoughts on &ldquo;"
+#~ msgstr "&nbsp; - количество комментариев в &ldquo;"
+
+#~ msgid "Posted on&nbsp"
+#~ msgstr "Опубликовано&nbsp"
+
+#~ msgid "Page %s"
+#~ msgstr "Страница %s"
+
+#~ msgid "slides"
+#~ msgstr "слайды"
+
+#~ msgid "slide"
+#~ msgstr "слайд"
+
+#~ msgid "Add New"
+#~ msgstr "Добавить Новый"
+
+#~ msgid "Add New Slide"
+#~ msgstr "Добавить новый Слайд"
+
+#~ msgid "Edit Slide"
+#~ msgstr "Редактировать Слайд"
+
+#~ msgid "New Slide"
+#~ msgstr "Новый Слайд"
+
+#~ msgid "All Slides"
+#~ msgstr "Все слайды"
+
+#~ msgid "View Slide"
+#~ msgstr "Посмотреть слайд"
+
+#~ msgid "Search Slides"
+#~ msgstr "Поиск Слайдов"
+
+#~ msgid "No Slides found"
+#~ msgstr "Слайды не найдены"
+
+#~ msgid "No Slides found in Trash"
+#~ msgstr "Нет слайдов в Trash"
+
+#~ msgid "Slides"
+#~ msgstr "Слайды"
+
+#~ msgid "Option of slides"
+#~ msgstr "Опции слайдов"
+
+#~ msgid "URL"
+#~ msgstr "URL-адрес"
+
+#~ msgid ""
+#~ "Link, which will be made a transition when you click on the title of slide"
+#~ msgstr ""
+#~ "Ссылка, на которую будет совершен переход при нажатии на заголовок слайда"
+
+#~ msgid "Text"
+#~ msgstr "Текст"
+
+#~ msgid ""
+#~ "Link, which will be made ​​a transition when you click on the title slide"
+#~ msgstr ""
+#~ "Ссылка, на которую будет совершен переход при нажатии на заголовок слайда"
+
+#~ msgid " and "
+#~ msgstr " и "
+
+#~ msgid "Posted on "
+#~ msgstr "Опубликовано"
+
+#~ msgid "Currently browsing tag: %s"
+#~ msgstr "Просматриваемая в данный момент метка: %s"
+
+#~ msgid "Category: %s"
+#~ msgstr "Категории: %s"
+
+#~ msgid "Blog Archives"
+#~ msgstr "Архивы Блога"

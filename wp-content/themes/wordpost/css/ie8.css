@@ -1,0 +1,48 @@
+#s, #searchsubmit, #slider img, .section, .widget, .post, .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image, .type-page, .type-attachment, .post textarea, .comments-area textarea, .type-page textarea, .submit, .button, #submit, .nav_post_link a, input[type="submit"] {
+	behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
+	position: relative;
+	zoom: 1;
+}
+
+#navigation ul ul {
+	-pie-background: url("<?php echo get_stylesheet_directory_uri() . '/images/drop_nav_arrow.png'; ?>") no-repeat top, url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_bottom.png'; ?>") no-repeat bottom;
+	behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
+}
+
+#navigation ul ul ul {
+	-pie-background: url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_top.png'; ?>") no-repeat top, url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_bottom.png'; ?>") no-repeat bottom;
+	behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
+}
+
+.submit {
+	padding: 0 14px 0;
+}
+
+#submit {
+	padding: 0 14px 0;
+}
+
+.button {
+	padding: 0 14px 0;
+}
+
+.post input[type=text] {
+	padding: 15px 10px 0 10px;
+}
+
+.file-load-block input[type=text] {
+	top: 10px;
+}
+
+.entry-content img {
+	max-width: 560px;
+	width: auto;
+	height: auto;
+}
+
+.wp-caption {
+	margin-right: 0 !important;
+	margin-bottom: 4px;
+	max-height: none !important;
+	width: 559px !important;
+}

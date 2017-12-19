@@ -1,0 +1,135 @@
+#s, #searchsubmit, #slider img, .section, .widget, .post, .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image, .type-page, .type-attachment, .post textarea, .comments-area textarea, .type-page textarea, .submit, .button, #submit, .nav_post_link a, input[type="submit"] {
+	behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
+	position: relative;
+	zoom: 1;
+}
+
+#navigation ul ul {
+	-pie-background: url("<?php echo get_stylesheet_directory_uri() . '/images/drop_nav_arrow.png'; ?>") no-repeat top, url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_bottom.png'; ?>") no-repeat bottom;
+	behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
+}
+
+#navigation ul ul ul {
+	-pie-background: url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_top.png'; ?>") no-repeat top, url("<?php echo get_stylesheet_directory_uri() . '/images/drop_menu_bottom.png'; ?>") no-repeat bottom;
+	behavior: url("<?php echo get_stylesheet_directory_uri() . '/css/PIE.htc'; ?>");
+}
+
+blockquote {
+	display: inline;
+	zoom: 1;
+}
+
+#helper_head {
+	display: inline;
+	zoom: 1;
+}
+
+#Nameblog {
+	display: inline;
+	float: left;
+	margin-top: 22px !important;
+	zoom: 1;
+}
+
+.site-header h3 {
+	position: absolute;
+	top: -5px;
+}
+
+.site-header h3 a {
+	font-size: 1.1em;
+}
+
+#navigation {
+	*display: inline;
+	float: right;
+	width: 520px;
+	zoom: 1;
+}
+
+#navigation ul {
+	z-index: 1000;
+}
+
+#navigation ul ul li {
+	float: left;
+}
+
+#searchsubmit {
+	top: -17px;
+}
+
+.title_slide h1 a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.post h2 a, .entry-title a {
+	color: #525252;
+	font-size: 1.2em !important;
+}
+
+.radio {
+	display: inline;
+	padding-left: 27px;
+	text-indent: 0;
+	zoom: 1;
+}
+
+span.left, span.center, .selectArea a, .checkboxArea, .checkboxAreaChecked, .radioArea, .radioAreaChecked, .radiodisabled, .checkboxdisabled {
+	display: inline;
+	zoom: 1;
+}
+
+.check {
+	display: inline;
+	zoom: 1;
+}
+
+.submit {
+	padding: 0 7px 0;
+}
+
+.button {
+	padding: 0 7px 0;
+}
+
+#submit {
+	padding: 0 7px 0;
+}
+
+.post input[type=text] {
+	padding: 15px 10px 0 10px;
+}
+
+#sidebar .widget .s {
+	width: 130px;
+}
+
+.entry-content img {
+	margin-right: 0 !important;
+	margin-bottom: 4px;
+	max-width: 559px;
+	width: expression((document.documentElement.clientWidth || document.body.clientWidth) > 559 ? "560px" : "auto") !important;
+	height: auto !important;
+}
+
+.wp-caption {
+	margin-right: 0 !important;
+	margin-bottom: 4px; /* sets max-width for IE */
+	width: 559px !important;
+	width: expression( document.body.clientWidth > 558 ? "559px" : "auto" );
+}
+
+#wordpost_content {
+	float: right;
+	margin-right: 0 !important;
+	width: 620px !important;
+}
+
+#sidebar {
+	float: left;
+	padding: 0 18px 0 0;
+	width: 300px;
+	word-wrap: break-word;
+}

@@ -1,0 +1,16 @@
+﻿@font-face {
+ font-family: Calibri;
+ src: url("pt-sans.regular.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: Calibri;
+	src: url("pt-sans.regular.ttf")
+}
+﻿@font-face {
+ font-family: "Open Sans";
+ src: url("open-sans.regular.eot") /* EOT file for IE */
+}
+@font-face {
+ font-family: "Open Sans";
+	src: url("open-sans.regular.ttf")
+}
