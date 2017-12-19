@@ -1,0 +1,242 @@
+.turn-text {
+  @include rotate(270deg);
+}
+.category-text {
+  position: absolute;
+  font-family: $title-font-family;
+  font-size: rem-calc(12);
+  color: $gray; 
+  text-transform: uppercase;
+}
+.last-home-section {
+  .category-text {
+    opacity: 1;
+    left: -275px;
+    top: 0px;
+    width: 250px;
+    text-align: right;
+    @include ipad {
+      display: none;
+    }
+  }
+}
+.small-featured-image {
+  opacity: 1;
+  bottom: 50px;
+  width: 60%;
+  height: rem-calc(351);
+  right: -80px;
+  float: right;
+  position: absolute;
+  z-index: 10;
+  img {
+    position: absolute;
+    right:0;
+    bottom:0;
+  }
+  .category-text {
+    left: -274px;
+    top: 101px;
+    width: 250px;
+    @include ipad {
+      display: none;
+    }
+  }
+}
+.large-featured-image {
+  opacity: 1;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  @include ipad {
+    width: 96%;
+    position: relative;
+  }
+  @include phone {
+    width: 94%;
+  }
+  img {
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: absolute;
+    line-height: 75px;
+    top: calc(50% - 72px);
+    text-align: center;
+    word-wrap: normal;
+    color: white;
+    @include ipad {
+      font-size: 50px;
+      line-height: 48px;
+      top: calc(50% - 52px);
+    }
+    a {
+      color: white;
+    }
+  }
+}
+.large-post-block {
+  opacity: 0;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 300px;
+  @include ipad {
+    width: 94%;
+  }
+  &:before {
+    height: 100%;
+    width: 80%;
+    @include ipad {
+      width: 100%;
+    }
+    @include background-gradient;
+  }
+  img {
+    width: 100%;
+  }
+  .post-text {
+    background: none !important;
+  }
+  .post-block {
+    margin:50px;
+    @include ipad {
+      margin:20px 10px;
+    }
+    h2 a, p, a, .category-text {
+      color: white;
+    }
+    a {
+      &.read-more {
+        &::after {
+          background: url('../images/icons/readmore-icon-white.svg') no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.half-post {
+  margin: 60px 0;
+  @include ipad {
+    position: relative;
+    margin: 30px 0;
+  }
+  &::before {
+    @include ipad {
+      width: 100%;
+      height: 100%;
+      @include background-gradient;
+      opacity: 0.7;
+    }
+  }
+  .post-text {
+    @include ipad {
+      position: relative;
+      z-index: 1;
+
+      .category-text, h2 a, p, .read-more {
+        color: white;
+      }
+      &::before {
+        width: 100%;
+        height: 100%;
+        @include background-gradient;
+      }
+    }
+    @include desktop {
+      background: none !important;
+    }
+  }
+  .post-image {
+    @include ipad {
+      display: none;
+    }
+  }
+}
+.post-block {
+  margin: 40px 50px 50px 50px;
+  position: relative;
+  z-index: 1;
+  @include ipad {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  @include box-sizing(border-box);
+  h2 {
+    font-weight: bold;
+    font-size: 46px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    @include ipad {
+      font-size: 30px;
+      line-height: 35px;
+    }
+    a {
+      color: $black;
+    }
+  }
+  @include ipad {
+    a {
+      &.read-more {
+        &::after {
+          background: url('../images/icons/readmore-icon-white.svg') no-repeat;
+        }
+      }
+    }
+  }
+  p {
+    @include ipad {
+      line-height: 18px;
+    }
+  }
+  .category-text {
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+    @include ipad {
+      margin-bottom: 0;
+    }
+  }
+}
+.placeholder {
+  min-width: 400px;
+  min-height: 400px;
+  background: $light-gray;
+}
+.description-block {
+  position:fixed;
+  bottom:rem-calc(20);
+  p {
+    font-size: rem-calc(12);
+    font-family: $text-font-family;
+    color: $medium-gray;
+    padding: 0 0 0 rem-calc(28);
+  }
+}
+.social {
+  padding-left: rem-calc(28);
+  @include ipad {
+    margin-left: 30px;
+  }
+  a {
+    font-size: 1.3rem;
+    color: $dark-gray;
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+    @include ipad {
+      font-size: 1.3rem;
+      color: #f7d781;
+      padding-left: 0.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}

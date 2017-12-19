@@ -1,0 +1,37 @@
+body {
+  background: white;
+  color: $black;
+  cursor: auto;
+  font-family: $body-font-family;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+h2 {
+  font-size: rem-calc(72);
+  font-family: $body-font-family;
+}
+p {
+  font-size: rem-calc(13);
+  color: $medium-gray;
+}
+a {
+  &.read-more {
+    font-family: $title-font-family;
+    font-size: rem-calc(13);
+    color: $black;
+    text-transform: uppercase;
+    display: inline-block;
+    &:after {
+      background: url('../images/icons/readmore-icon-black.svg') no-repeat;
+      display: inline-block;
+      content: '';
+      width: 13px;
+      height: 10px;
+      margin-left: 5px;
+    }
+  }
+}

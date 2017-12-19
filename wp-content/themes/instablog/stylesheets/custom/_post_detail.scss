@@ -1,0 +1,342 @@
+.post_detail {
+	text-align: center;
+	.instablog_post_title {
+		font-family: $body-font-family;
+		font-size: rem-calc(42);
+		font-weight: bold;
+		text-align: center;
+		margin-top: 19px;
+		a {
+			color: $dark-gray;
+		}
+		@include ipad {
+			font-size: rem-calc(26);
+			line-height: 30px;
+		}
+ 	}
+	&.post_format {
+		&-post-format-quote {
+			.instablog_post_content {
+				background: $faint-blue;
+		    border: 0;
+		    padding: 40px 40px 25px 40px;
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+		&-post-format-video {
+			.instablog_post_content {
+				.jetpack-video-wrapper {
+			  	iframe {
+						margin: 0px auto !important;
+					}
+				}
+			}
+		}
+		&-post-format-gallery, &-post-format-video, &-post-format-quote, &-post-format-aside, &-post-format-link {
+			.entry-header {
+				display: none;
+			}
+			.instablog_post_content {
+				.dropcap {
+					display: none;
+				}
+			}
+		}
+	}
+ 	.instablog_post_author{
+ 		font-family: $title-font-family;
+  	font-size: 12px;
+  	letter-spacing: 0.5px;
+  	text-align: center;
+  	color: $gray;
+		text-transform: uppercase;
+ 	}
+
+ 	.instablog_post_datesection {
+ 		border-top: 1px solid $light-gray;
+	  border-bottom: 1px solid $light-gray;
+	  padding: 10px 29px;
+	  display: inline-block;
+ 		font-family: $body-font-family;
+		font-size: 13px;
+		font-style: italic;
+		letter-spacing: 0.5px;
+		text-align: center;
+		color: $medium-gray;
+		margin-top: rem-calc(30);
+		margin-bottom: rem-calc(30);
+		@include ipad {
+			margin-top: rem-calc(15);
+			margin-bottom: rem-calc(15);
+			padding: 10px;
+		}
+		a {
+			color: #787878;
+		}
+ 	}
+
+ 	.instablog_post_content {
+		font-family: $text-font-family;
+ 		text-align: left;
+    font-size: 13px;
+    color: $medium-gray;
+    width: 65%;
+    margin: 0 auto 60px auto;
+		position: relative;
+		@include ipad {
+			width: 100%;
+	    margin: 0 auto;
+		}
+		h2 {
+			font-size: 24px;
+			color: $black;
+		}
+		a.read-more {
+			margin-top: 20px;
+			display: block;
+			width: 100%;
+		}
+		.dropcap {
+			font-size: 120px;
+			position: absolute;
+			font-family: $text-font-family;
+			color: $off-white;
+			left: -34px;
+			top: -70px;
+			z-index: -1;
+		}
+ 	}
+	blockquote {
+		background: $faint-blue;
+		border: 0;
+		padding: 30px;
+		p {
+			font-size: 16px;
+			color: $dark-gray;
+			font-style: italic;
+			margin-bottom: 0;
+		}
+	}
+ 	figure {
+ 		&.alignleft {
+ 			float: left;
+    	margin-left: -64px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+    	@include phone {
+    		float: none;
+    		margin: 0 auto;
+    	}
+ 		}
+ 		&.alignright {
+ 			float: right;
+			margin-right: -64px;
+			margin-left: 20px;
+			margin-bottom: 20px;
+ 			@include phone {
+    			float: none;
+    			margin: 0 auto;
+    		}
+ 		}
+ 		&.aligncenter {
+ 			margin: 0 auto;
+ 			padding-bottom: 11px;
+ 		}
+
+ 		.wp-caption-text {
+ 			text-align: center;
+			font-style: italic;
+			margin-top: 3px;
+ 		}
+ 	}
+}
+
+.instablog_page_title {
+		font-family: $body-font-family;
+		font-size: rem-calc(42);
+		font-weight: bold;
+		text-align: center;
+		color: $dark-gray;
+		margin-top: 19px;
+		@include ipad {
+			font-size: 32px;
+			margin-bottom: 30px;
+		}
+ 	}
+
+.comments-area {
+	width: 65%;
+	margin: 0 auto;
+	@include ipad {
+		width: 100%;
+	}
+	.comments-title{
+		font-family: $body-font-family;
+	    font-size: 24px;
+	    text-align: center;
+	    color: $dark-gray;
+	    margin-top: 30px;
+	}
+	.comment-reply-title {
+		font-family: $body-font-family;
+    font-size: 24px;
+    text-align: left;
+    color: $dark-gray;
+    margin-top: 35px;
+	}
+	ol {
+		list-style: none;
+	}
+
+	.children {
+    	margin-left: 70px;
+    	margin-top: 20px;
+	}
+
+	.comment-form-comment {
+		label {
+			transform: rotate(-360deg);
+			font-family: $body-font-family;
+			font-size: 13px;
+			font-style: italic;
+			letter-spacing: 0.5px;
+			text-align: left;
+			color: $medium-gray;
+		}
+		textarea {
+			border: none;
+			box-shadow: none;
+			background: transparent;
+			border-bottom: 1px solid $light-gray;
+		}
+	}
+	.comment-form {
+		input {
+			border: none;
+			box-shadow: none;
+			background: transparent;
+			border-bottom: 1px solid $light-gray;
+		}
+		textarea {
+			border: 1px solid $light-gray;
+		}
+		.form-submit {
+			.submit {
+				font-family: $title-font-family;
+				background-color: $dark-gray;
+				text-transform: uppercase;
+		    padding: 10px 20px;
+		    margin-top: 12px;
+		    color: white;
+		    font-size: 13px;
+		    letter-spacing: 0.5px;
+		    text-align: center;
+			}
+		}
+		.logged-in-as {
+			a {
+				color: $black;
+			}
+		}
+	}
+}
+
+.instablog_back_text {
+	background-color: #e7f1f8;
+    padding: 20px 12px;
+    font-style: italic;
+}
+
+.instablog_firstletter{
+	position: relative;
+
+	.instablog_first_letter {
+		position: absolute;
+	    font-size: 415%;
+	    left: -18px;
+	    top: -40px;
+	    opacity: 0.3;
+	}
+}
+
+.instablog_bold {
+	font-size: rem-calc(22);
+}
+
+.instablog_postcontent_img {
+	float: left;
+    padding-top: 20px;
+    padding-right: 21px;
+    padding-bottom: 20px;
+}
+.comment-meta {
+	.comment-author {
+		border: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		display: block;
+		.avatar {
+			float: left;
+			width: 56px;
+			height: 56px;
+		    border-radius: 50%;
+		    max-width: 100%;
+		    margin-right: 20px;
+		}
+		.fn {
+				a{
+				  font-family: $body-font-family;
+				  font-size: 14px;
+				  font-weight: bold;
+				  text-align: left;
+				  color: $dark-gray;
+		    	}
+		    }
+		.says {
+			clip: rect(1px, 1px, 1px, 1px);
+	    	height: 1px;
+	    	overflow: hidden;
+	    	position: absolute !important;
+	    	width: 1px;
+	    }
+
+	}
+	.comment-metadata {
+		margin-bottom: rem-calc(27);
+		font-family: $body-font-family;
+		font-size: 14px;
+		font-style: italic;
+		text-align: left;
+		a{
+		 color: $medium-gray;
+		}
+
+	}
+}
+
+.comment-list {
+	.comment-content {
+		margin-left: 87px;
+	}
+	.reply {
+		margin-left: 87px;
+		a {
+			 font-family: $body-font-family;
+			 font-size: 12px;
+			 letter-spacing: 0.5px;
+			 text-align: left;
+			 color: $gray;
+		}
+	}
+}
+
+article {
+	figure {
+		@include phone {
+			width: 100%!important;
+			height: auto;
+		}
+	}
+}

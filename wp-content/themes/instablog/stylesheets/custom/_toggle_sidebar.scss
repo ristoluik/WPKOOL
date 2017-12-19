@@ -1,0 +1,116 @@
+.main_sidebar_toggle_wrap{
+  z-index: 1000;
+  position: fixed;
+  background-color: $main_sidebar_toggle_color;
+  top: 0;
+  width: rem-calc(498);
+  left: -31.125rem;
+  height: 100%;
+  overflow: auto;
+  @include phone {
+    width: 20.125rem;
+    padding: 0 20px;
+  }
+
+
+  .close_btn_dynamic_sidebar{
+    float: right;
+    display: inline-block;
+    font-size: 33px;
+    margin-top: 0rem;
+    margin-right: 2.5rem;
+    font-family: $title-font-family;
+    color: rgba(255,255,255,0.5);
+    font-weight: normal;
+    vertical-align: bottom;
+    &:hover{
+      cursor: pointer;
+    }
+    img{
+      width: 23px;
+    }
+  }
+  .instablog_content_sidebar_wrap {
+    width: rem-calc(340);
+    margin: 0 auto;
+    @include phone {
+      width: 18rem;
+    }
+    .textwidget{
+      text-align: left;
+      font-size: 12px;
+      line-height: 20px;
+      font-family: $text-font-family;
+      color: rgba(255,255,255,0.5);
+    }
+    .widget-title{
+      margin-top: rem-calc(37);
+      font-size: rem-calc(16);
+      color: $gray;
+      font-style: italic;
+      font-family: $text-font-family;
+    }
+    ul {
+      margin-left: 0px;
+    }
+    li {
+      font-family: $title-font-family;
+      font-size: rem-calc(13);
+      list-style: none;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.5;
+      a {
+        color: white;
+
+      }
+    }
+    .widget_search{
+      margin-top: rem-calc(39);
+      @include phone {
+        padding-right: rem-calc(15);
+      }
+      .screen-reader-text{
+        display: none;
+      }
+      label{
+        display: inline-block;
+      }
+      .search-field{
+        width: rem-calc(219);
+        display: inline-block;
+        height: rem-calc(42);
+        border: none;
+        outline: none;
+        background-color: #535353;
+        color: rgba(255,255,255,0.5);
+        font-style: italic;
+        letter-spacing: 0.5px;
+        padding-left: rem-calc(18);
+        @include phone {
+          width: 10.92rem;
+        }
+      }
+      .search-submit{
+        display: inline-block;
+        float: left;
+        width: rem-calc(121);
+        height: 42px;
+        outline: none;
+        border: none;
+        background-color: #454545;
+        color: $gray;
+        font-size: rem-calc(15px);
+        letter-spacing: 0.5px;
+        float: right;
+        font-family: $title-font-family;
+        @include phone {
+          width: rem-calc(98);
+        }
+        &:hover{
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}

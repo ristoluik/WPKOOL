@@ -1,0 +1,412 @@
+.main-navigation {
+  h1 {
+    &.home {
+      margin-left: 0;
+      margin-bottom: 0;
+      line-height: 50px;
+      @include ipad {
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      @include phone {
+        margin-bottom: 0;
+      }
+      a {
+        font-family: $body-font-family;
+        font-weight: bold;
+        font-size: rem-calc(45);
+        color: $dark-gray;
+        letter-spacing: -2px;
+        @include phone {
+          font-size: 2.3rem;
+        }
+        @include phone_small {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+  .menu-social-wrap {
+    width: 100%;
+    margin-left: rem-calc(10);
+    margin-top: rem-calc(65);
+    @include phone {
+      margin-top: 1.065rem;
+    }
+    .menu {
+      font-family: $text-font-family;
+      font-size: 13px;
+      text-transform: uppercase;
+      li {
+        line-height: 35px;
+        list-style: none;
+        width: rem-calc(190);
+        position: relative;
+        padding:0;
+        &:hover {
+          a {
+            color: black;
+          }
+        }
+        a {
+          color: $dark-gray;
+          padding: 9px 1rem;
+          font-family: $title-font-family;
+          font-size: 15px;
+          padding-left: 2px;
+        }
+        &.menu-item-has-children {
+          .sub-menu {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            left: 10rem;
+            top: 1px;
+          }
+          &:hover {
+            .sub-menu{
+              display: block;
+            }
+            &:after{
+              content: "\f178";
+              font-family: FontAwesome;
+              position: relative;
+            }
+          }
+        }
+        &.current_page_item {
+          list-style: inherit;
+          color: $red;
+        }
+        .sub-menu {
+          .current_page_item { 
+            list-style: inherit;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .description {
+    font-family: $title-font-family;
+    margin-top: rem-calc(5);
+    font-size: rem-calc(12);
+    color: $dark-gray;
+    text-transform: uppercase;
+    @include ipad {
+      margin-top: 0;
+    };
+  }
+  .navigation, .description-block, .social {
+    width: 100%;
+  }
+  .current-menu-item {
+    &:before {
+      content: '. ';
+      position: absolute;
+      left: -22px;
+      top: -11px;
+      color: $red;
+      font-size: 48px;
+      @include ipad {
+        display: none;
+      }
+    }
+  }
+}
+
+#site-navigation{
+  padding-top: 12px;
+  text-align: left;
+  padding-left: 42px;
+  @include ipad {
+    padding-top: 1rem;
+    text-align: left;
+    padding-left: 0;
+  }
+  @include ipad_desktop {
+    padding-left: 0;
+  }
+}
+// The flyout menu overrides
+.menu-social-wrap-responsive {
+  .menu-main-menu-container, .menu-menu-container {
+    ul {
+      &.menu, &#primary-menu {
+        padding: 30px;
+        li {
+          &:before {
+            display: none;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+#primary-menu-list, ul#primary-menu{
+  font-family: $title-font-family;
+  font-size: rem-calc(15);
+  text-transform: uppercase;
+  margin-left: 0;
+  li {
+    &.menu-item {
+      display: list-item;
+      width: 100%;
+      @include ipad {
+        line-height:32px;
+      }
+      a {
+        color: $dark-gray;
+        @include ipad {
+          color: white;
+        }
+        padding: 9px 0;
+        width: auto;
+        display: inline;
+      }
+      &:hover {
+        &:after {
+          width: 12px;
+          height: 7px;
+          margin-left: 6px;
+          display: inline-block;
+          content: '';
+          background: url('../images/icons/arrow.svg') no-repeat right top;
+        }
+      }
+      @include ipad {
+        &.menu-item-has-children {
+          padding: 4.4px 0;
+        }
+        &:hover {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+    @include ipad {
+      .sub-menu {
+        list-style-type: none;
+      }
+    }
+  }
+  .current_page_item {
+    list-style: inherit;
+    color: $red;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main-navigation .menu-social-wrap {
+    margin-top: 1.065rem;
+  }
+}
+
+.menu-social-wrap-responsive {
+  display: block;
+  z-index: 2;
+  position: fixed;
+  z-index: 11;
+  top: 0;
+  width: 31.125rem;
+  right: -31.125rem;
+  height: 100%;
+  overflow: auto;
+  background: $dark-gray;
+  top: 0;
+  @include phone {
+    width: 21rem;
+    padding: 0 6px;
+  }
+  p.sidebar-text, .social {
+    @include phone {
+      display: none;
+    }
+  }
+  .menu-main-menu-container {
+    .menu {
+      .menu-item {
+        a {
+          color: white;
+          padding: 9px 1rem;
+        }
+      }
+      .menu-item-has-children{
+        .sub-menu {
+          display: block;
+          position: inherit;
+          left: 0rem;
+        }
+      }
+    }
+  }
+  p {
+    @include ipad {
+      width: 90%;
+      margin-left: 37px;
+      color: white;
+    }
+  }
+}
+
+.c-sidebar-labelmobile {
+  @include desktop {
+    display: none;
+  }
+  position: absolute;
+  top: 20px;
+  right: 4px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  color: $dark-gray;
+  line-height: inherit;
+  text-decoration: none;
+  float: right;
+  font-size: 24px;
+  padding-top: 0;
+  margin-top: 0;
+  @include ipad_desktop {
+    display: block;
+  }
+  @include ipad {
+    display: block;
+  }
+  &:before {
+    z-index: -1;
+    content: "";
+    -webkit-transition: height .2s cubic-bezier(.645,.045,.355,1) 0s;
+    transition: height .2s cubic-bezier(.645,.045,.355,1) 0s;
+  }
+  .instablog_menu_txt {
+    @include phone {
+      display: none;
+    }
+  }
+  .c-sidebar-menubar {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    vertical-align: middle;
+    padding: 0 10px;
+    margin-left: 10px;
+    background-color: $deep-blue;
+    position: relative;
+    z-index: 2;
+    color: black;
+    @include transform(rotate(0));
+    -webkit-transition: background-color .2s cubic-bezier(.645,.045,.355,1) 0s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) 0s;
+    transition: background-color .2s cubic-bezier(.645,.045,.355,1) 0s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) 0s;
+    transition: transform .2s cubic-bezier(.645,.045,.355,1) 0s,background-color .2s cubic-bezier(.645,.045,.355,1) 0s;
+    transition: transform .2s cubic-bezier(.645,.045,.355,1) 0s,background-color .2s cubic-bezier(.645,.045,.355,1) 0s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) 0s;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: $deep-blue;
+      bottom: -7px;
+      -webkit-transition: bottom .2s cubic-bezier(.645,.045,.355,1) .2s,background-color .2s cubic-bezier(.645,.045,.355,1);
+      transition: bottom .2s cubic-bezier(.645,.045,.355,1) .2s,background-color .2s cubic-bezier(.645,.045,.355,1);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      background-color: $deep-blue;
+      top: -7px;
+      @include transform(rotate(0));
+      -webkit-transition: top .2s cubic-bezier(.645,.045,.355,1) .2s,background-color .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .2s cubic-bezier(.645,.045,.355,1);
+      transition: top .2s cubic-bezier(.645,.045,.355,1) .2s,background-color .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .2s cubic-bezier(.645,.045,.355,1);
+      transition: top .2s cubic-bezier(.645,.045,.355,1) .2s,transform .2s cubic-bezier(.645,.045,.355,1),background-color .2s cubic-bezier(.645,.045,.355,1);
+      transition: top .2s cubic-bezier(.645,.045,.355,1) .2s,transform .2s cubic-bezier(.645,.045,.355,1),background-color .2s cubic-bezier(.645,.045,.355,1),-webkit-transform .2s cubic-bezier(.645,.045,.355,1);
+    }
+  }
+}
+
+.is-open{
+  position: fixed;
+  right: 16px;
+  .c-sidebar-menubar {
+    @include ipad {
+      background-color: transparent;
+      @include transform(rotate(45deg));
+      -webkit-transition: background-color .2s cubic-bezier(.645,.045,.355,1) .3s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) .3s;
+      transition: background-color .2s cubic-bezier(.645,.045,.355,1) .3s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) .3s;
+      transition: transform .2s cubic-bezier(.645,.045,.355,1) .3s,background-color .2s cubic-bezier(.645,.045,.355,1) .3s;
+      transition: transform .2s cubic-bezier(.645,.045,.355,1) .3s,background-color .2s cubic-bezier(.645,.045,.355,1) .3s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) .3s;
+    }
+    &:before{
+      @include ipad {
+        background-color: $gray-blue-light;
+        bottom: 0;
+        -webkit-transition: bottom .2s cubic-bezier(.645,.045,.355,1),background-color .2s cubic-bezier(.645,.045,.355,1) .3s;
+        transition: bottom .2s cubic-bezier(.645,.045,.355,1),background-color .2s cubic-bezier(.645,.045,.355,1) .3s;
+      }
+    }
+    &:after{
+      @include ipad {
+      background-color: $gray-blue-light;
+      top: 0;
+      @include transform(rotate(90deg));
+      -webkit-transition: top .2s cubic-bezier(.645,.045,.355,1),background-color .2s cubic-bezier(.645,.045,.355,1) .3s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) .2s;
+      transition: top .2s cubic-bezier(.645,.045,.355,1),background-color .2s cubic-bezier(.645,.045,.355,1) .3s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) .2s;
+      transition: top .2s cubic-bezier(.645,.045,.355,1),transform .2s cubic-bezier(.645,.045,.355,1) .2s,background-color .2s cubic-bezier(.645,.045,.355,1) .3s;
+      transition: top .2s cubic-bezier(.645,.045,.355,1),transform .2s cubic-bezier(.645,.045,.355,1) .2s,background-color .2s cubic-bezier(.645,.045,.355,1) .3s,-webkit-transform .2s cubic-bezier(.645,.045,.355,1) .2s;
+    }
+    }
+  }
+}
+.site_title_desc_wrap {
+  @include ipad {
+    display: inline-block;
+  }
+}
+.calendar_wrap {
+  caption {
+    background: transparent;
+    color: #c8c8c8;
+  }
+}
+.posts-navigation {
+  width: 80%;
+  margin: 0 auto;
+  .nav-links {
+    a {
+      color: $dark-gray;
+    }
+    .nav-previous {
+      i {
+        margin-right: 5px;
+      }
+    }
+    .nav-next {
+      i{
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+ul {
+  li {
+    padding: 5px 0;
+  }
+  ul{
+    list-style-type: disc;
+  }
+}
+ol {
+  li {
+    padding: 5px 0;
+  }
+}

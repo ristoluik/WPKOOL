@@ -1,0 +1,133 @@
+@mixin rotate($rotate) {
+  -webkit-transform: rotate($rotate);
+   -webkit-transform-origin: right top;
+   -moz-transform: rotate($rotate);
+   -moz-transform-origin: right top;
+   -ms-transform: rotate($rotate);
+   -ms-transform-origin: right top;
+   -o-transform: rotate($rotate);
+   -o-transform-origin: right top;
+   transform: rotate($rotate);
+   transform-origin: right top;
+}
+@mixin transform($value){
+  -webkit-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+@mixin box-sizing($value){
+  box-sizing: $value;
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+}
+@mixin background-gradient() {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: ''; 
+  z-index: 1;
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+}
+@mixin button {
+  background: $black;
+  font-family: $title-font-family;
+  font-size: rem-calc(12);
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  border: 0;
+  &:hover {
+    background: $gray;
+    font-family: $title-font-family;
+    font-size: rem-calc(12);
+    padding: 12px 24px;
+    border: 0;
+  }
+}
+@mixin desktop {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin ipad_landscape {
+  @media (min-width: 1020px) {
+    @content;
+  }
+}
+@mixin ipad_desktop {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin phone_small {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
+@font-face {
+    font-family: 'ek_muktabold';
+    src: url('../fonts/ek-mukta/ekmukta-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ek-mukta/ekmukta-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktaextrabold';
+    src: url('../fonts/ek-mukta/ekmukta-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/ek-mukta/ekmukta-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktaextralight';
+    src: url('../fonts/ek-mukta/ekmukta-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/ek-mukta/ekmukta-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktalight';
+    src: url('../fonts/ek-mukta/ekmukta-light-webfont.woff2') format('woff2'),
+         url('../fonts/ek-mukta/ekmukta-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktamedium';
+    src: url('../fonts/ek-mukta/ekmukta-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ek-mukta/ekmukta-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktaregular';
+    src: url('../fonts/ek-mukta/ekmukta-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ek-mukta/ekmukta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ek_muktasemibold';
+    src: url('ekmukta-semibold-webfont.woff2') format('woff2'),
+         url('ekmukta-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
