@@ -1,0 +1,52 @@
+== Changelog ==
+
+= 1.0.8 =
+* Footer widget added
+* Screenshot changed
+* Minor design fixing
+
+= 1.0.7 =
+* Breadcrum function changed
+* Fixed minor bug
+
+= 1.0.6 =
+* Woocommerce compatibility added.
+* Design updated.
+
+= 1.0.5 =
+* updated compatibility 4.7
+* Custom CSS migration
+
+= 1.0.4 =
+* Number of slider and tesimonial increased
+
+= 1.0.3 =
+* Added social share button
+
+= 1.0.2 =
+* Removed upsell buttons from Customizer
+
+= 1.0.1 =
+* Added header contact widget
+* Style fixing
+
+= 1.0.0 =
+* Bug fixed
+
+= 0.0.6 =
+* Bug fixed
+
+= 0.0.5 =
+* Bug fixed
+
+= 0.0.4 =
+* Bug fixed
+
+= 0.0.3 =
+* Bug fixed
+
+= 0.0.2 =
+* Minor Bug fixing
+
+= 0.0.1 =
+* Initial release
